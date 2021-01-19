@@ -4,8 +4,8 @@ using namespace std;
 void fun(int n)
 {
    #Recursive solution
-   #Time Complexity: O(n)
-   #Auxiliary Space: O(n)
+   #Time Complexity:O(n)
+   #Auxiliary Space:O(n)
    if(n==1)
      cout<<1<<" ";
    else
