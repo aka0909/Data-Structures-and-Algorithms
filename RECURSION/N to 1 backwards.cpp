@@ -1,12 +1,11 @@
-#Recursive Solution
-#Time Complexity: O(n)
-#Auxiliary Space: O(n)
-
 #include <bits/stdc++.h>
 using namespace std;
 
 void fun(int n)
 {
+   #Recursive Solution
+   #Time Complexity: O(n)
+   #Auxiliary Space: O(n)
    if(n==1)
      cout<<1;
    else
