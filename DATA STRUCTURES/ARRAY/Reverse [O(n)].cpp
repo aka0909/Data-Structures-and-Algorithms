@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void Reverse(int arr[],int n) //where diff=arr[j]-arr[i] and j>i
+void Reverse(int arr[],int n) 
 {
     int low=0,high=n-1;
     while(low<high)
