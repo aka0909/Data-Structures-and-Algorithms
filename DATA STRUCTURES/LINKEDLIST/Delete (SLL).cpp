@@ -32,7 +32,7 @@ void displayR(Node* p) //Recursive Display
    displayR(p->next);
 }
 
-void insert(int pos,int x,struct Node* head)
+Node* insert(int pos,int x,struct Node* head)
 {
     struct Node* p=head;
     struct Node* t;
@@ -42,6 +42,7 @@ void insert(int pos,int x,struct Node* head)
         t=new Node(x);
         t->next=head;
         head=t;
+        return head;
     }
     else if(pos>0)
     {
@@ -57,6 +58,7 @@ void insert(int pos,int x,struct Node* head)
             t->next=p->next;
             p->next=t;
         }
+        return head;
     }
 }
 
@@ -72,7 +74,7 @@ int count(Node* head)
     return cnt;
 }
 
-int Delete(int pos,struct Node* head)
+Node* Delete(int pos,struct Node* head)
 {
     Node* q=NULL;
     Node* p=head;
@@ -80,27 +82,25 @@ int Delete(int pos,struct Node* head)
     int x=-1,i=0;
 
     if(pos<1 || pos>count(head))
-        return x;
+        return head;
 
     if(pos==1)
     {
         q=head;
         head=head->next;
-        x=q->data;
         delete q;
-        return x;
+        return head;
     }
     else
     {
-        for(i=0;i<pos-1;i++)
+        for(i=1;i<pos-1;i++)
         {
-            q=p;
             p=p->next;
         }
-        q->next=p->next;
-        x=p->data;
-        delete p;
-        return x;
+        q=p->next;
+        p->next=q->next;
+        delete q;
+        return head;
     }
 }
 
@@ -113,7 +113,9 @@ int main()
     head->next=temp1;
     temp1->next=temp2;
 
-    Delete(2,head);
+    head=Delete(1,head);
+
+    head=insert(0,40,head);
 
     display(head);
     return 0;
