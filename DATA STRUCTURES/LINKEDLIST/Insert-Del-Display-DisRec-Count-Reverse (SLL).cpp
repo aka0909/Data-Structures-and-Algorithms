@@ -104,6 +104,23 @@ Node* Delete(int pos,struct Node* head)
     }
 }
 
+Node* Reverse(Node* head)
+{
+    Node* prev=NULL;
+    Node* curr=head;
+    Node* next=NULL;
+
+    while(curr!=NULL)
+    {
+        next=curr->next;
+        curr->next=prev;
+        prev=curr;
+        curr=next;
+    }
+    head=prev;
+    return head;
+}
+
 int main()
 {
     struct Node* head=new Node(10);
@@ -113,9 +130,7 @@ int main()
     head->next=temp1;
     temp1->next=temp2;
 
-    head=Delete(1,head);
-
-    head=insert(0,40,head);
+    head=Reverse(head);
 
     display(head);
     return 0;
