@@ -8,3 +8,6 @@ The repository contains code to important questions on Data Structures and Algor
    * String
    * Matrix
    * Hash
+   * Stack
+   * Queue
+   * Heap
