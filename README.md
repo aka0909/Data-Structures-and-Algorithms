@@ -3,6 +3,8 @@ The repository contains code to important questions on Data Structures and Algor
 ## Algorithms
    * Recursion
    * Graphs
+   * Dynamic Programming
+   * Backtracking
 
 ## Data Structures
    * Array
