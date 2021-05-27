@@ -15,3 +15,4 @@ The repository contains code to important questions on Data Structures and Algor
    * Stack
    * Queue
    * Heap
+   * Trie
