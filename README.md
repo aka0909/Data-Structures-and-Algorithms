@@ -14,5 +14,7 @@ The repository contains code to important questions on Data Structures and Algor
    * Hash
    * Stack
    * Queue
-   * Heap
+   * Heap (to enter)
    * Trie
+   * Tree (to enter)
+   * BST (to enter)
