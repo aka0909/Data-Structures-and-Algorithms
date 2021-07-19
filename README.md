@@ -6,6 +6,7 @@ The repository contains code to important questions on Data Structures and Algor
    * Dynamic Programming
    * Backtracking
    * Greedy
+   * Searching
 
 ## Data Structures
    * Array
