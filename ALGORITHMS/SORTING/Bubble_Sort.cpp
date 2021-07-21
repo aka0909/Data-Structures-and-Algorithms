@@ -1,4 +1,9 @@
 // C++ program of bubble sort
+//Bubble sort is a stable sorting algorithm
+//Time Complexity: O(n^2)
+//Space Complexity: O(1) as it is sorting inplace
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -22,6 +27,7 @@ void BubbleSort(int arr[],int n)
             break;
     }
 }
+
 int main()
 {
 	int arr[10]={56,90,81,72,60,1,23,49,3,100};
